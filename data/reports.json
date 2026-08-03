@@ -1,0 +1,73 @@
+[
+  {
+    "id": "2026-08-02-0630",
+    "date": "2026-08-02",
+    "time": "06:30",
+    "field": "第二圃場",
+    "weather": "曇り",
+    "work": "収穫作業のみ。病害虫の発生なし。",
+    "duration_min": 90,
+    "harvest": [
+      {
+        "item": "トマト",
+        "qty": 12.0,
+        "unit": "kg"
+      }
+    ],
+    "pesticide": [],
+    "note": "",
+    "images": [
+      {
+        "file": "images/2026-08-02-0630/main.jpg",
+        "caption": "本日の収穫（トマト）"
+      }
+    ],
+    "extra_images": []
+  },
+  {
+    "id": "2026-08-01-0700",
+    "date": "2026-08-01",
+    "time": "07:00",
+    "field": "第一圃場",
+    "weather": "晴れ",
+    "work": "トマトの定植と支柱立て。株間45cmで2列分を植え付け。",
+    "duration_min": 150,
+    "harvest": [
+      {
+        "item": "キュウリ",
+        "qty": 8.5,
+        "unit": "kg"
+      },
+      {
+        "item": "ナス",
+        "qty": 3.2,
+        "unit": "kg"
+      }
+    ],
+    "pesticide": [
+      {
+        "name": "ダコニール1000",
+        "dilution": "1000倍",
+        "target": "うどんこ病・疫病予防",
+        "amount": "40L"
+      }
+    ],
+    "note": "午後から気温上昇の予報。灌水を早めに実施。",
+    "images": [
+      {
+        "file": "images/2026-08-01-0700/main.jpg",
+        "caption": "定植後の第一圃場（2列分）"
+      }
+    ],
+    "extra_images": [
+      {
+        "file": "images/2026-08-01-0700/extra-1.jpg",
+        "caption": "支柱立ての様子"
+      },
+      {
+        "file": "images/2026-08-01-0700/extra-2.jpg",
+        "caption": "散布後の葉面"
+      }
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# エディタ
+.vscode/
+*.swp
+
+# Python
+__pycache__/
+*.pyc

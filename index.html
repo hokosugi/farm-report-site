@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>農作業レポート</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>農作業レポート</h1>
+    <p class="subtitle">iPhoneショートカットからの記録</p>
+  </header>
+
+  <main id="app">
+    <div class="controls">
+      <input type="search" id="search" placeholder="作業内容・圃場・作物で絞り込み…" aria-label="検索">
+      <span id="count" class="count"></span>
+    </div>
+    <div id="reports" class="reports"></div>
+    <p id="empty" class="empty" hidden>該当するレポートがありません。</p>
+    <p id="error" class="error" hidden></p>
+  </main>
+
+  <footer class="site-footer">
+    <p>Generated from voice-input JSON · GitHub Pages</p>
+  </footer>
+
+  <!-- 画像拡大用オーバーレイ -->
+  <div id="lightbox" class="lightbox" hidden>
+    <button class="lightbox-close" aria-label="閉じる">&times;</button>
+    <img src="" alt="">
+    <p class="lightbox-caption"></p>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

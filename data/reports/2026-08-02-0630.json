@@ -1,0 +1,18 @@
+{
+  "id": "2026-08-02-0630",
+  "date": "2026-08-02",
+  "time": "06:30",
+  "field": "第二圃場",
+  "weather": "曇り",
+  "work": "収穫作業のみ。病害虫の発生なし。",
+  "duration_min": 90,
+  "harvest": [
+    { "item": "トマト", "qty": 12.0, "unit": "kg" }
+  ],
+  "pesticide": [],
+  "note": "",
+  "images": [
+    { "file": "images/2026-08-02-0630/main.jpg", "caption": "本日の収穫（トマト）" }
+  ],
+  "extra_images": []
+}
