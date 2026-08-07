@@ -102,12 +102,12 @@
     "time": "07:16",
     "field": "さわやか農園",
     "weather": "快晴 28℃",
-    "work": "ナス圃場にてファーマ乳剤を希釈倍数2000倍、散布液量2Lで噴霧散布",
+    "work": "ナス圃場にてアファーム乳剤を希釈倍数2000倍、散布液量2Lで噴霧散布",
     "duration_min": "",
     "harvest": [],
     "pesticide": [
       {
-        "name": "ファーマ乳剤",
+        "name": "アファーム乳剤",
         "dilution": "2000倍",
         "target": "",
         "amount": "2L"
@@ -118,7 +118,7 @@
     "images": [
       {
         "file": "https://drive.google.com/thumbnail?id=1Bxy8qO544iQk4dEWtt-7_w9G5cFYj3Y1&sz=w2000",
-        "caption": "ナス圃場にてファーマ乳剤を希釈倍数2000倍、散布液量2Lで噴霧散布",
+        "caption": "ナス圃場にてアファーム乳剤を希釈倍数2000倍、散布液量2Lで噴霧散布",
         "link": "https://drive.google.com/file/d/1Bxy8qO544iQk4dEWtt-7_w9G5cFYj3Y1/view"
       }
     ],
