@@ -1,10 +1,65 @@
 [
   {
+    "id": "2026-08-07-0746",
+    "date": "2026-08-07",
+    "time": "07:46",
+    "field": "さわやか農園",
+    "weather": "霧雨 26℃",
+    "work": "茄子17.5kg、ピーマン約1kgの収穫。前日に化学肥料を散布。",
+    "duration_min": "",
+    "harvest": [
+      {
+        "item": "茄子",
+        "qty": "",
+        "unit": ""
+      },
+      {
+        "item": "ピーマン",
+        "qty": "",
+        "unit": ""
+      }
+    ],
+    "pesticide": [],
+    "fertilizer": [],
+    "note": "",
+    "images": [],
+    "extra_images": []
+  },
+  {
+    "id": "2026-08-05-0716",
+    "date": "2026-08-05",
+    "time": "07:16",
+    "field": "さわやか農園",
+    "weather": "晴れ 25℃",
+    "work": "ピーマンとナスに植物活力剤メネデールを散布し、カルシウムマグネシウム欠乏対策を実施",
+    "duration_min": "",
+    "harvest": [],
+    "pesticide": [],
+    "fertilizer": [
+      {
+        "name": "メネデール植物活力剤",
+        "dilution": "500倍",
+        "amount": "30L",
+        "purpose": "カルシウムマグネシウム欠乏防止",
+        "crops": "ピーマン・ナス"
+      }
+    ],
+    "note": "特にラッシュ（部分的に聞き取り不明瞭）",
+    "images": [
+      {
+        "file": "https://drive.google.com/thumbnail?id=1gHQSx4uT9V6DFZRLj2TsQn70ZyYvI58a&sz=w2000",
+        "caption": "ピーマンとナスに植物活力剤メネデールを散布し、カルシウムマグネシウム欠乏対策を実施",
+        "link": "https://drive.google.com/file/d/1gHQSx4uT9V6DFZRLj2TsQn70ZyYvI58a/view"
+      }
+    ],
+    "extra_images": []
+  },
+  {
     "id": "2026-08-03-1216",
     "date": "2026-08-03",
     "time": "12:16",
     "field": "さわやか農園",
-    "weather": "",
+    "weather": "晴れ 30℃",
     "work": "茄子の収穫とジャンボピーマンの収穫、尻腐れの発生",
     "duration_min": "",
     "harvest": [
@@ -46,7 +101,7 @@
     "date": "2026-08-02",
     "time": "07:16",
     "field": "さわやか農園",
-    "weather": "",
+    "weather": "快晴 28℃",
     "work": "ナス圃場にてファーマ乳剤を希釈倍数2000倍、散布液量2Lで噴霧散布",
     "duration_min": "",
     "harvest": [],
