@@ -20,13 +20,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Regenerate reports.json
-        run: python build.py
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

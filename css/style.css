@@ -176,3 +176,14 @@ figcaption {
 @media (max-width: 480px) {
   table.facts th { width: 38%; }
 }
+
+/* Drive画像が表示できないときのフォールバック */
+.img-fallback {
+  padding: 1.4rem 1rem;
+  background: #f3f0e9;
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  color: var(--muted);
+  font-size: .85rem;
+  text-align: center;
+}

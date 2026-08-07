@@ -48,6 +48,7 @@ function matches(r, q) {
     r.work, r.field, r.weather, r.note,
     ...(r.harvest || []).map((h) => h.item),
     ...(r.pesticide || []).map((p) => `${p.name} ${p.target}`),
+    ...(r.fertilizer || []).map((f) => `${f.name} ${f.purpose} ${f.crops}`),
   ].join(' ').toLowerCase();
   return hay.includes(q);
 }
@@ -115,6 +116,7 @@ function factsTable(r) {
   rows.push(row('作業時間', esc(formatDuration(r.duration_min))));
   rows.push(row('収穫', harvestCell(r.harvest)));
   rows.push(row('農薬散布', pesticideCell(r.pesticide)));
+  rows.push(row('肥料', fertilizerCell(r.fertilizer)));
 
   const table = document.createElement('table');
   table.className = 'facts';
@@ -156,13 +158,38 @@ function pesticideCell(pest) {
   return `<ul class="sub-list">${items.join('')}</ul>`;
 }
 
+function resolveSrc(file) {
+  const f = String(file || '');
+  return /^https?:\/\//.test(f) ? f : DATA_DIR + f;
+}
+
+function fertilizerCell(fert) {
+  if (!fert || !fert.length) return '<span class="tag-none">なし</span>';
+  const items = fert.map((f) => {
+    const meta = [f.dilution, f.amount].filter(Boolean).join(' / ');
+    const sub = [f.purpose, f.crops].filter(Boolean).join('・');
+    return `<li class="pest">${esc(f.name || '')}
+      ${meta ? `<small> — ${esc(meta)}</small>` : ''}
+      ${sub ? `<small>（${esc(sub)}）</small>` : ''}</li>`;
+  });
+  return `<ul class="sub-list">${items.join('')}</ul>`;
+}
+
 function figure(img) {
   const fig = document.createElement('figure');
   const image = document.createElement('img');
-  image.src = DATA_DIR + img.file;
+  image.src = resolveSrc(img.file);
+  image.referrerPolicy = 'no-referrer';
   image.alt = img.caption || '';
   image.loading = 'lazy';
   image.addEventListener('click', () => openLightbox(img));
+  image.addEventListener('error', () => {
+    fig.classList.add('img-error');
+    image.replaceWith(Object.assign(document.createElement('div'), {
+      className: 'img-fallback',
+      textContent: '画像を表示できません（Driveの共有設定を確認）',
+    }));
+  });
   fig.appendChild(image);
   if (img.caption) {
     const cap = document.createElement('figcaption');
@@ -185,7 +212,7 @@ function setupLightbox() {
 }
 
 function openLightbox(img) {
-  el.lightbox.querySelector('img').src = DATA_DIR + img.file;
+  el.lightbox.querySelector('img').src = resolveSrc(img.file);
   el.lightbox.querySelector('.lightbox-caption').textContent = img.caption || '';
   el.lightbox.hidden = false;
 }

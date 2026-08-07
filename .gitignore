@@ -8,3 +8,13 @@
 # Python
 __pycache__/
 *.pyc
+
+# 台帳・自動化・座標（ローカルのみ。GitHubには載せない）
+data/ledger.csv
+convert.py
+sync_prompt.py
+publish_site.py
+com.hokosugi.syncprompt.plist
+com.hokosugi.publishsite.plist
+SYNC_PROMPT_SETUP.md
+SYNC_SITE_SETUP.md
