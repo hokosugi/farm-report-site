@@ -1,5 +1,47 @@
 [
   {
+    "id": "2026-08-11-0809",
+    "date": "2026-08-11",
+    "time": "08:09",
+    "field": "さわやか農園",
+    "weather": "晴れ時々曇り 26℃",
+    "work": "病害虫の多発と生育不良を観察、葉に小さな穴が多数あり肥料投入にもかかわらず葉が大きくならない状態",
+    "duration_min": "",
+    "harvest": [],
+    "pesticide": [],
+    "fertilizer": [],
+    "note": "画像に病害虫の様子が記録されている模様",
+    "images": [
+      {
+        "file": "https://drive.google.com/thumbnail?id=1DZ4gk52p7UMQqjTp_QPdu6SAcHYVgkVP&sz=w2000",
+        "caption": "病害虫の多発と生育不良を観察、葉に小さな穴が多数あり肥料投入にもかかわらず葉が大きくならない状態",
+        "link": "https://drive.google.com/file/d/1DZ4gk52p7UMQqjTp_QPdu6SAcHYVgkVP/view"
+      }
+    ],
+    "extra_images": []
+  },
+  {
+    "id": "2026-08-10-1348",
+    "date": "2026-08-10",
+    "time": "13:48",
+    "field": "さわやか農園",
+    "weather": "晴れ 32℃",
+    "work": "茄子の収穫を実施。A品11kg、B品6kg、C品少々。B品・C品が多いため初期段階での摘果を推奨",
+    "duration_min": "",
+    "harvest": [],
+    "pesticide": [],
+    "fertilizer": [],
+    "note": "B品・C品が多いため、初期段階での摘果による品質向上が必要",
+    "images": [
+      {
+        "file": "https://drive.google.com/thumbnail?id=1W82gkmeFlRGYiP8tfdr19uh5IH-hNL_3&sz=w2000",
+        "caption": "茄子の収穫を実施。A品11kg、B品6kg、C品少々。B品・C品が多いため初期段階での摘果を推奨",
+        "link": "https://drive.google.com/file/d/1W82gkmeFlRGYiP8tfdr19uh5IH-hNL_3/view"
+      }
+    ],
+    "extra_images": []
+  },
+  {
     "id": "2026-08-09-1002",
     "date": "2026-08-09",
     "time": "10:02",
