@@ -1,5 +1,26 @@
 [
   {
+    "id": "2026-08-16-0816",
+    "date": "2026-08-16",
+    "time": "08:16",
+    "field": "さわやか農園",
+    "weather": "晴れ時々曇り 26℃",
+    "work": "那須の廃棄処分で結構数が多くもったいない状況を確認",
+    "duration_min": "",
+    "harvest": [],
+    "pesticide": [],
+    "fertilizer": [],
+    "note": "",
+    "images": [
+      {
+        "file": "https://drive.google.com/thumbnail?id=11gsTnW9-H3UfMZf6w09t-64gw4KXWTHg&sz=w2000",
+        "caption": "那須の廃棄処分で結構数が多くもったいない状況を確認",
+        "link": "https://drive.google.com/file/d/11gsTnW9-H3UfMZf6w09t-64gw4KXWTHg/view"
+      }
+    ],
+    "extra_images": []
+  },
+  {
     "id": "2026-08-13-1428",
     "date": "2026-08-13",
     "time": "14:28",
