@@ -1,5 +1,26 @@
 [
   {
+    "id": "2026-08-17-0743",
+    "date": "2026-08-17",
+    "time": "07:43",
+    "field": "さわやか農園",
+    "weather": "晴れ 25℃",
+    "work": "ナスの成育不良のため、化成肥料に続き有機入り配合肥料を15kg散布",
+    "duration_min": "",
+    "harvest": [],
+    "pesticide": [],
+    "fertilizer": [],
+    "note": "",
+    "images": [
+      {
+        "file": "https://drive.google.com/thumbnail?id=1XcLOdtZnQWoJPtR-G8pAeZdzb7QLM4MK&sz=w2000",
+        "caption": "ナスの成育不良のため、化成肥料に続き有機入り配合肥料を15kg散布",
+        "link": "https://drive.google.com/file/d/1XcLOdtZnQWoJPtR-G8pAeZdzb7QLM4MK/view"
+      }
+    ],
+    "extra_images": []
+  },
+  {
     "id": "2026-08-16-0816",
     "date": "2026-08-16",
     "time": "08:16",
