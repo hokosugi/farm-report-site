@@ -1,5 +1,34 @@
 [
   {
+    "id": "2026-08-18-0736",
+    "date": "2026-08-18",
+    "time": "07:36",
+    "field": "さわやか農園",
+    "weather": "晴れ 25℃",
+    "work": "メネデール野菜肥料を500倍希釈、40リットルをナス・ピーマン・オクラ・キュウリに散布",
+    "duration_min": "",
+    "harvest": [],
+    "pesticide": [],
+    "fertilizer": [
+      {
+        "name": "メネデール野菜肥料",
+        "dilution": "500倍",
+        "amount": "40L",
+        "purpose": "",
+        "crops": ""
+      }
+    ],
+    "note": "",
+    "images": [
+      {
+        "file": "https://drive.google.com/thumbnail?id=1sdIx21BPI4IlifupY_S1BmvYKMsoD3Pw&sz=w2000",
+        "caption": "メネデール野菜肥料を500倍希釈、40リットルをナス・ピーマン・オクラ・キュウリに散布",
+        "link": "https://drive.google.com/file/d/1sdIx21BPI4IlifupY_S1BmvYKMsoD3Pw/view"
+      }
+    ],
+    "extra_images": []
+  },
+  {
     "id": "2026-08-17-0743",
     "date": "2026-08-17",
     "time": "07:43",
@@ -16,6 +45,40 @@
         "file": "https://drive.google.com/thumbnail?id=1XcLOdtZnQWoJPtR-G8pAeZdzb7QLM4MK&sz=w2000",
         "caption": "ナスの成育不良のため、化成肥料に続き有機入り配合肥料を15kg散布",
         "link": "https://drive.google.com/file/d/1XcLOdtZnQWoJPtR-G8pAeZdzb7QLM4MK/view"
+      }
+    ],
+    "extra_images": [
+      {
+        "file": "https://drive.google.com/thumbnail?id=1XcLOdtZnQWoJPtR-G8pAeZdzb7QLM4MK&sz=w2000",
+        "caption": "コメリで1000円以下で買えて安い",
+        "link": "https://drive.google.com/file/d/1XcLOdtZnQWoJPtR-G8pAeZdzb7QLM4MK/view"
+      }
+    ]
+  },
+  {
+    "id": "2026-08-17-0742",
+    "date": "2026-08-17",
+    "time": "07:42",
+    "field": "さわやか農園",
+    "weather": "晴れ 25℃",
+    "work": "トレボン農薬を茄子とオクラに散布",
+    "duration_min": "",
+    "harvest": [],
+    "pesticide": [
+      {
+        "name": "トレボン",
+        "dilution": "1000倍",
+        "target": "アザミウマ",
+        "amount": "2L"
+      }
+    ],
+    "fertilizer": [],
+    "note": "",
+    "images": [
+      {
+        "file": "https://drive.google.com/thumbnail?id=191S-hjGq8vfpsn77-dRywMMPkUd4tzFU&sz=w2000",
+        "caption": "トレボン農薬を茄子とオクラに散布",
+        "link": "https://drive.google.com/file/d/191S-hjGq8vfpsn77-dRywMMPkUd4tzFU/view"
       }
     ],
     "extra_images": []
