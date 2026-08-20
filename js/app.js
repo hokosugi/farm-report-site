@@ -10,6 +10,15 @@ const el = {
   empty: document.getElementById('empty'),
   error: document.getElementById('error'),
   lightbox: document.getElementById('lightbox'),
+  tabList: document.getElementById('tab-list'),
+  tabCalendar: document.getElementById('tab-calendar'),
+  viewList: document.getElementById('view-list'),
+  viewCalendar: document.getElementById('view-calendar'),
+  calPrev: document.getElementById('cal-prev'),
+  calNext: document.getElementById('cal-next'),
+  calTitle: document.getElementById('cal-title'),
+  calGrid: document.getElementById('cal-grid'),
+  calDayDetail: document.getElementById('cal-day-detail'),
 };
 
 let allReports = [];
@@ -26,6 +35,7 @@ async function init() {
       (a, b) => key(b).localeCompare(key(a))
     );
     render(allReports);
+    setupCalendar();
   } catch (err) {
     el.error.textContent = err.message;
     el.error.hidden = false;
@@ -37,6 +47,173 @@ async function init() {
   });
 
   setupLightbox();
+  setupTabs();
+}
+
+// ===== 一覧⇔カレンダーのタブ切り替え =====
+function setupTabs() {
+  el.tabList.addEventListener('click', () => showView('list'));
+  el.tabCalendar.addEventListener('click', () => showView('calendar'));
+}
+
+function showView(view) {
+  const isList = view === 'list';
+  el.viewList.hidden = !isList;
+  el.viewCalendar.hidden = isList;
+  el.tabList.classList.toggle('is-active', isList);
+  el.tabList.setAttribute('aria-selected', String(isList));
+  el.tabCalendar.classList.toggle('is-active', !isList);
+  el.tabCalendar.setAttribute('aria-selected', String(!isList));
+}
+
+// ===== カレンダー =====
+// 記録1件から「農薬」「肥料」「収穫」「作業」の区分（複数可）を判定する。
+// record_type列に頼らず、harvest/pesticide/fertilizer配列の有無から判定するので
+// convert.py・reports.jsonの形式は変更不要。
+function categoriesFor(r) {
+  const cats = [];
+  if ((r.harvest || []).length) cats.push('収穫');
+  if ((r.pesticide || []).length) cats.push('農薬');
+  if ((r.fertilizer || []).length) cats.push('肥料');
+  if (!cats.length) cats.push('作業');
+  return cats;
+}
+
+let calMonth = new Date();
+let calSelectedDate = null;
+
+function setupCalendar() {
+  el.calPrev.addEventListener('click', () => changeMonth(-1));
+  el.calNext.addEventListener('click', () => changeMonth(1));
+  // 最新の記録がある月を初期表示にする（記録が無ければ今月）
+  if (allReports.length) {
+    const latest = allReports.reduce((a, b) => (key(a) > key(b) ? a : b));
+    const [y, m] = latest.date.split('-').map(Number);
+    calMonth = new Date(y, m - 1, 1);
+  }
+  renderCalendar();
+}
+
+function changeMonth(delta) {
+  calMonth = new Date(calMonth.getFullYear(), calMonth.getMonth() + delta, 1);
+  calSelectedDate = null;
+  renderCalendar();
+}
+
+function groupByDate(list) {
+  const map = new Map();
+  for (const r of list) {
+    if (!r.date) continue;
+    if (!map.has(r.date)) map.set(r.date, []);
+    map.get(r.date).push(r);
+  }
+  return map;
+}
+
+function renderCalendar() {
+  const byDate = groupByDate(allReports);
+  const year = calMonth.getFullYear();
+  const month = calMonth.getMonth(); // 0始まり
+  el.calTitle.textContent = `${year}年${month + 1}月`;
+
+  const firstOfMonth = new Date(year, month, 1);
+  const firstWeekday = firstOfMonth.getDay(); // 0=日曜
+  const daysInMonth = new Date(year, month + 1, 0).getDate();
+  const todayStr = dateStr(new Date());
+
+  el.calGrid.innerHTML = '';
+  for (const w of ['日', '月', '火', '水', '木', '金', '土']) {
+    const cell = document.createElement('div');
+    cell.className = 'cal-weekday';
+    cell.textContent = w;
+    el.calGrid.appendChild(cell);
+  }
+  for (let i = 0; i < firstWeekday; i++) {
+    el.calGrid.appendChild(Object.assign(document.createElement('div'), { className: 'cal-cell is-blank' }));
+  }
+  for (let d = 1; d <= daysInMonth; d++) {
+    const ds = dateStr(new Date(year, month, d));
+    const records = byDate.get(ds) || [];
+    el.calGrid.appendChild(dayCell(d, ds, records, ds === todayStr));
+  }
+
+  renderDayDetail();
+}
+
+function dateStr(d) {
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${y}-${m}-${day}`;
+}
+
+function dayCell(dayNum, ds, records, isToday) {
+  const cell = document.createElement('div');
+  cell.className = 'cal-cell';
+  if (isToday) cell.classList.add('is-today');
+  if (ds === calSelectedDate) cell.classList.add('is-selected');
+  if (!records.length) cell.classList.add('is-empty');
+
+  const num = document.createElement('div');
+  num.className = 'cal-daynum';
+  num.textContent = String(dayNum);
+  cell.appendChild(num);
+
+  if (records.length) {
+    // その日の全記録から区分ごとの件数を数える（同日複数記録も反映）
+    const counts = new Map();
+    for (const r of records) {
+      for (const c of categoriesFor(r)) counts.set(c, (counts.get(c) || 0) + 1);
+    }
+    const badges = document.createElement('div');
+    badges.className = 'cal-badges';
+    for (const [label, count] of counts) {
+      const b = document.createElement('span');
+      b.className = `cal-badge cal-badge--${badgeKind(label)}`;
+      b.textContent = count > 1 ? `${label}×${count}` : label;
+      badges.appendChild(b);
+    }
+    cell.appendChild(badges);
+  }
+
+  cell.addEventListener('click', () => {
+    calSelectedDate = ds;
+    renderCalendar();
+  });
+  return cell;
+}
+
+function badgeKind(label) {
+  switch (label) {
+    case '農薬': return 'pesticide';
+    case '肥料': return 'fertilizer';
+    case '収穫': return 'harvest';
+    default: return 'work';
+  }
+}
+
+function renderDayDetail() {
+  el.calDayDetail.innerHTML = '';
+  if (!calSelectedDate) {
+    el.calDayDetail.appendChild(Object.assign(document.createElement('p'), {
+      className: 'empty', textContent: '日にちを選んでください。',
+    }));
+    return;
+  }
+  const records = (groupByDate(allReports).get(calSelectedDate) || [])
+    .sort((a, b) => key(b).localeCompare(key(a)));
+  const title = document.createElement('h2');
+  title.className = 'cal-day-title';
+  title.textContent = `${calSelectedDate}（${records.length}件）`;
+  el.calDayDetail.appendChild(title);
+
+  if (!records.length) {
+    el.calDayDetail.appendChild(Object.assign(document.createElement('p'), {
+      className: 'empty', textContent: 'この日の記録はありません。',
+    }));
+    return;
+  }
+  for (const r of records) el.calDayDetail.appendChild(card(r));
 }
 
 function key(r) {

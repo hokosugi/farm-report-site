@@ -13,12 +13,32 @@
   </header>
 
   <main id="app">
-    <div class="controls">
-      <input type="search" id="search" placeholder="作業内容・圃場・作物で絞り込み…" aria-label="検索">
-      <span id="count" class="count"></span>
+    <div class="view-tabs" role="tablist">
+      <button type="button" id="tab-list" class="view-tab is-active" role="tab" aria-selected="true">一覧</button>
+      <button type="button" id="tab-calendar" class="view-tab" role="tab" aria-selected="false">カレンダー</button>
     </div>
-    <div id="reports" class="reports"></div>
-    <p id="empty" class="empty" hidden>該当するレポートがありません。</p>
+
+    <section id="view-list">
+      <div class="controls">
+        <input type="search" id="search" placeholder="作業内容・圃場・作物で絞り込み…" aria-label="検索">
+        <span id="count" class="count"></span>
+      </div>
+      <div id="reports" class="reports"></div>
+      <p id="empty" class="empty" hidden>該当するレポートがありません。</p>
+    </section>
+
+    <section id="view-calendar" hidden>
+      <div class="cal-header">
+        <button type="button" id="cal-prev" aria-label="前の月">&lsaquo;</button>
+        <span id="cal-title" class="cal-title"></span>
+        <button type="button" id="cal-next" aria-label="次の月">&rsaquo;</button>
+      </div>
+      <div id="cal-grid" class="cal-grid"></div>
+      <div id="cal-day-detail" class="cal-day-detail">
+        <p class="empty">日にちを選んでください。</p>
+      </div>
+    </section>
+
     <p id="error" class="error" hidden></p>
   </main>
 
