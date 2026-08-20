@@ -1,5 +1,26 @@
 [
   {
+    "id": "2026-08-20-0801",
+    "date": "2026-08-20",
+    "time": "08:01",
+    "field": "さわやか農園",
+    "weather": "晴れ 26℃",
+    "work": "なすの収穫作業実施。傷物が多いが、メネデール散布後は改善傾向。",
+    "duration_min": "",
+    "harvest": [],
+    "pesticide": [],
+    "fertilizer": [],
+    "note": "",
+    "images": [
+      {
+        "file": "https://drive.google.com/thumbnail?id=13cFkOfv5wDjvPoEXcX4aDZMFmMLYtPHG&sz=w2000",
+        "caption": "なすの収穫作業実施。傷物が多いが、メネデール散布後は改善傾向。",
+        "link": "https://drive.google.com/file/d/13cFkOfv5wDjvPoEXcX4aDZMFmMLYtPHG/view"
+      }
+    ],
+    "extra_images": []
+  },
+  {
     "id": "2026-08-18-0736",
     "date": "2026-08-18",
     "time": "07:36",
