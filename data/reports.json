@@ -1,5 +1,26 @@
 [
   {
+    "id": "2026-08-22-0753",
+    "date": "2026-08-22",
+    "time": "07:53",
+    "field": "不明",
+    "weather": "",
+    "work": "潅水と除草剤散布を実施。作業時間約1時間。",
+    "duration_min": "",
+    "harvest": [],
+    "pesticide": [],
+    "fertilizer": [],
+    "note": "",
+    "images": [
+      {
+        "file": "https://drive.google.com/thumbnail?id=15sgv8iX_C-vV7idfKm6lXp8Zom1NCyOe&sz=w2000",
+        "caption": "潅水と除草剤散布を実施。作業時間約1時間。",
+        "link": "https://drive.google.com/file/d/15sgv8iX_C-vV7idfKm6lXp8Zom1NCyOe/view"
+      }
+    ],
+    "extra_images": []
+  },
+  {
     "id": "2026-08-20-0801",
     "date": "2026-08-20",
     "time": "08:01",
