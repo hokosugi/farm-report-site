@@ -1,5 +1,26 @@
 [
   {
+    "id": "2026-08-23-0920",
+    "date": "2026-08-23",
+    "time": "09:20",
+    "field": "さわやか農園",
+    "weather": "",
+    "work": "本日は収穫作業を実施。備品が多く見られ、早期の農薬散布未実施が原因と推測される。",
+    "duration_min": "",
+    "harvest": [],
+    "pesticide": [],
+    "fertilizer": [],
+    "note": "",
+    "images": [
+      {
+        "file": "https://drive.google.com/thumbnail?id=1urvIDh91aZVwOcgj_-HMDrQ5cDQBesHl&sz=w2000",
+        "caption": "本日は収穫作業を実施。備品が多く見られ、早期の農薬散布未実施が原因と推測される。",
+        "link": "https://drive.google.com/file/d/1urvIDh91aZVwOcgj_-HMDrQ5cDQBesHl/view"
+      }
+    ],
+    "extra_images": []
+  },
+  {
     "id": "2026-08-22-0753",
     "date": "2026-08-22",
     "time": "07:53",
