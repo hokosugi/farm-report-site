@@ -1,5 +1,34 @@
 [
   {
+    "id": "2026-08-24-0837",
+    "date": "2026-08-24",
+    "time": "08:37",
+    "field": "さわやか農園",
+    "weather": "",
+    "work": "なす、ピーマン、オクラにメネデール液肥を施用",
+    "duration_min": "",
+    "harvest": [],
+    "pesticide": [],
+    "fertilizer": [
+      {
+        "name": "メネデール",
+        "dilution": "",
+        "amount": "",
+        "purpose": "",
+        "crops": ""
+      }
+    ],
+    "note": "",
+    "images": [
+      {
+        "file": "https://drive.google.com/thumbnail?id=14eoKa_jXLs4NBm7Xd5JWLquMI3P0oCSq&sz=w2000",
+        "caption": "なす、ピーマン、オクラにメネデール液肥を施用",
+        "link": "https://drive.google.com/file/d/14eoKa_jXLs4NBm7Xd5JWLquMI3P0oCSq/view"
+      }
+    ],
+    "extra_images": []
+  },
+  {
     "id": "2026-08-23-0920",
     "date": "2026-08-23",
     "time": "09:20",
