@@ -1,5 +1,32 @@
 [
   {
+    "id": "2026-08-25-0743",
+    "date": "2026-08-25",
+    "time": "07:43",
+    "field": "さわやか農園",
+    "weather": "",
+    "work": "なす葉に黄化・褐変・穴あき症状を観察。害虫および病害の可能性あり。ele Max、ナスを中心に葉面散布。500倍希釈、約20L",
+    "duration_min": "",
+    "harvest": [],
+    "pesticide": [],
+    "fertilizer": [],
+    "note": "",
+    "images": [
+      {
+        "file": "https://drive.google.com/thumbnail?id=1NmdNhLX_EQBW7qvmzEkfkWgxCCPCunYK&sz=w2000",
+        "caption": "なす葉に黄化・褐変・穴あき症状を観察。害虫および病害の可能性あり。ele Max、ナスを中心に葉面散布。500倍希釈、約20L",
+        "link": "https://drive.google.com/file/d/1NmdNhLX_EQBW7qvmzEkfkWgxCCPCunYK/view"
+      }
+    ],
+    "extra_images": [
+      {
+        "file": "https://drive.google.com/thumbnail?id=1NmdNhLX_EQBW7qvmzEkfkWgxCCPCunYK&sz=w2000",
+        "caption": "claudeのよると、ハダニ類の多発（直接の枯れ込み要因・ほぼ確定）",
+        "link": "https://drive.google.com/file/d/1NmdNhLX_EQBW7qvmzEkfkWgxCCPCunYK/view"
+      }
+    ]
+  },
+  {
     "id": "2026-08-24-0837",
     "date": "2026-08-24",
     "time": "08:37",
