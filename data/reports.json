@@ -1,5 +1,26 @@
 [
   {
+    "id": "2026-08-27-0638",
+    "date": "2026-08-27",
+    "time": "06:38",
+    "field": "さわやか農園",
+    "weather": "",
+    "work": "圃場で病害虫の観察を実施。葉の変色・枯死からハダと半枯れ病が怪しまれるが、一番被害の大きい苗を切ってみたところ、みずみずしく半枯れ病の可能性はなくなった。原因はハダニなのでハダニ専用の農薬を撒くつもり",
+    "duration_min": "",
+    "harvest": [],
+    "pesticide": [],
+    "fertilizer": [],
+    "note": "",
+    "images": [
+      {
+        "file": "https://drive.google.com/thumbnail?id=1Zp07v66yTJOR3fWomgF4bxy9n-pf0gsA&sz=w2000",
+        "caption": "圃場で病害虫の観察を実施。葉の変色・枯死からハダと半枯れ病が怪しまれるが、一番被害の大きい苗を切ってみたところ、みずみずしく半枯れ病の可能性はなくなった。原因はハダニなのでハダニ専用の農薬を撒くつもり",
+        "link": "https://drive.google.com/file/d/1Zp07v66yTJOR3fWomgF4bxy9n-pf0gsA/view"
+      }
+    ],
+    "extra_images": []
+  },
+  {
     "id": "2026-08-25-0743",
     "date": "2026-08-25",
     "time": "07:43",
