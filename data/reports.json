@@ -1,5 +1,33 @@
 [
   {
+    "id": "2026-08-30-1313",
+    "date": "2026-08-30",
+    "time": "13:13",
+    "field": "さわやか農園",
+    "weather": "",
+    "work": "グレーシア乳剤を散布。葉に黄化と穴あき症状を観察",
+    "duration_min": "",
+    "harvest": [],
+    "pesticide": [
+      {
+        "name": "GRACIA乳剤",
+        "dilution": "2000倍",
+        "target": "ハダニ",
+        "amount": "4L（多め）"
+      }
+    ],
+    "fertilizer": [],
+    "note": "",
+    "images": [
+      {
+        "file": "https://drive.google.com/thumbnail?id=1rtJGF-aG7RqWoJTgb0AitqGzTmxTgaHd&sz=w2000",
+        "caption": "グレーシア乳剤を散布。葉に黄化と穴あき症状を観察",
+        "link": "https://drive.google.com/file/d/1rtJGF-aG7RqWoJTgb0AitqGzTmxTgaHd/view"
+      }
+    ],
+    "extra_images": []
+  },
+  {
     "id": "2026-08-27-0638",
     "date": "2026-08-27",
     "time": "06:38",
