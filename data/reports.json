@@ -1,5 +1,32 @@
 [
   {
+    "id": "2026-09-01-1349",
+    "date": "2026-09-01",
+    "time": "13:49",
+    "field": "さわやか農園",
+    "weather": "",
+    "work": "水なすがハダニによる被害で枯れており伐採。長なすと中長ナスは良好な状態で継続予定",
+    "duration_min": "",
+    "harvest": [],
+    "pesticide": [],
+    "fertilizer": [],
+    "note": "",
+    "images": [
+      {
+        "file": "https://drive.google.com/thumbnail?id=10T8svF32l5ki6uaET1JPTQd9TvUNZc4H&sz=w2000",
+        "caption": "水なすがハダニによる被害で枯れており伐採。長なすと中長ナスは良好な状態で継続予定",
+        "link": "https://drive.google.com/file/d/10T8svF32l5ki6uaET1JPTQd9TvUNZc4H/view"
+      }
+    ],
+    "extra_images": [
+      {
+        "file": "https://drive.google.com/thumbnail?id=13OFHa3HMaA1XO7xTWFoW52lBEAt6C7is&sz=w2000",
+        "caption": "モロヘイヤとオクラの1部も伐採して冬野菜用にスペースを開けた",
+        "link": "https://drive.google.com/file/d/13OFHa3HMaA1XO7xTWFoW52lBEAt6C7is/view"
+      }
+    ]
+  },
+  {
     "id": "2026-08-30-1313",
     "date": "2026-08-30",
     "time": "13:13",
@@ -442,7 +469,7 @@
     "date": "2026-08-03",
     "time": "12:16",
     "field": "さわやか農園",
-    "weather": "晴れ 30℃",
+    "weather": "",
     "work": "茄子の収穫とジャンボピーマンの収穫、尻腐れの発生",
     "duration_min": "",
     "harvest": [
