@@ -1,5 +1,43 @@
 [
   {
+    "id": "2026-09-06-0748",
+    "date": "2026-09-06",
+    "time": "07:48",
+    "field": "さわやか農園",
+    "weather": "",
+    "work": "なす全体がハダニ被害を受けたため苗を根元から切除したが、一部枝を残しておいた。その所から枝がでて葉がでてきた。ピーマンは鈴なりの良好な着果を確認、マグネシウム施用の効果と考察。",
+    "duration_min": "",
+    "harvest": [
+      {
+        "item": "なす",
+        "qty": "",
+        "unit": ""
+      },
+      {
+        "item": "ピーマン",
+        "qty": "",
+        "unit": ""
+      }
+    ],
+    "pesticide": [],
+    "fertilizer": [],
+    "note": "",
+    "images": [
+      {
+        "file": "https://drive.google.com/thumbnail?id=1rtMjwVcMJMGqLMdjb7ZuGF6p3uR6sw49&sz=w2000",
+        "caption": "なす全体がハダニ被害を受けたため苗を根元から切除したが、一部枝を残しておいた。その所から枝がでて葉がでてきた。ピーマンは鈴なりの良好な着果を確認、マグネシウム施用の効果と考察。",
+        "link": "https://drive.google.com/file/d/1rtMjwVcMJMGqLMdjb7ZuGF6p3uR6sw49/view"
+      }
+    ],
+    "extra_images": [
+      {
+        "file": "https://drive.google.com/thumbnail?id=1DnMMvVkTuWGE1xmcbANg897SZEi53bwR&sz=w2000",
+        "caption": "ハダニ対策で刈り取ったところからの新芽と葉だけど、すでに害虫にやられている。雨が明けたら農薬散布する予定。いつもの化成肥料をナスだけに散布。約５００g程度。",
+        "link": "https://drive.google.com/file/d/1DnMMvVkTuWGE1xmcbANg897SZEi53bwR/view"
+      }
+    ]
+  },
+  {
     "id": "2026-09-01-1349",
     "date": "2026-09-01",
     "time": "13:49",
