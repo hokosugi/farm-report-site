@@ -1,5 +1,82 @@
 [
   {
+    "id": "2026-09-19-1102",
+    "date": "2026-09-19",
+    "time": "11:02",
+    "field": "さわやか農園",
+    "weather": "",
+    "work": "なすの葉に活力をつけるためメネデールを、アザミウマ対策としてアファーム乳剤を散布して秋なすの生育に備える",
+    "duration_min": "",
+    "harvest": [],
+    "pesticide": [
+      {
+        "name": "アファーム乳剤",
+        "dilution": "1000倍",
+        "target": "アザミウマ（葉にあるピンホールはアザミウマが原因）",
+        "amount": "2L"
+      }
+    ],
+    "fertilizer": [],
+    "note": "秋なすの生育準備として実施。葉の勢いを高める目的",
+    "images": [
+      {
+        "file": "https://drive.google.com/thumbnail?id=1rIU5WI7GVeBx_YSI303pZDhtRJoiUF2v&sz=w2000",
+        "caption": "なすの葉に活力をつけるためメネデールを、アザミウマ対策としてアファーム乳剤を散布して秋なすの生育に備える",
+        "link": "https://drive.google.com/file/d/1rIU5WI7GVeBx_YSI303pZDhtRJoiUF2v/view"
+      }
+    ],
+    "extra_images": []
+  },
+  {
+    "id": "2026-09-19-1059",
+    "date": "2026-09-19",
+    "time": "10:59",
+    "field": "さわやか農園",
+    "weather": "",
+    "work": "畑を耕耘し、冬野菜の大根とにんじんを植える準備を完了。場合によってはブロッコリーも植える予定。",
+    "duration_min": "",
+    "harvest": [],
+    "pesticide": [],
+    "fertilizer": [],
+    "note": "",
+    "images": [
+      {
+        "file": "https://drive.google.com/thumbnail?id=14cttMm0UbQUmsbRkfh-5A7jxqgXpSyd9&sz=w2000",
+        "caption": "畑を耕耘し、冬野菜の大根とにんじんを植える準備を完了。場合によってはブロッコリーも植える予定。",
+        "link": "https://drive.google.com/file/d/14cttMm0UbQUmsbRkfh-5A7jxqgXpSyd9/view"
+      }
+    ],
+    "extra_images": []
+  },
+  {
+    "id": "2026-09-12-1051",
+    "date": "2026-09-12",
+    "time": "10:51",
+    "field": "さわやか農園",
+    "weather": "",
+    "work": "ハダニ対策としてカネマイトフロアブルを1500倍希釈で3リットル散布。枝を多めに払った後に施用。",
+    "duration_min": "",
+    "harvest": [],
+    "pesticide": [
+      {
+        "name": "カネマイト フロアブル",
+        "dilution": "1500倍",
+        "target": "ハダニ",
+        "amount": "3L"
+      }
+    ],
+    "fertilizer": [],
+    "note": "",
+    "images": [
+      {
+        "file": "https://drive.google.com/thumbnail?id=1CA_LcUP529Bj3mR8hwYKBoocv2mBrzuk&sz=w2000",
+        "caption": "ハダニ対策としてカネマイトフロアブルを1500倍希釈で3リットル散布。枝を多めに払った後に施用。",
+        "link": "https://drive.google.com/file/d/1CA_LcUP529Bj3mR8hwYKBoocv2mBrzuk/view"
+      }
+    ],
+    "extra_images": []
+  },
+  {
     "id": "2026-09-06-0748",
     "date": "2026-09-06",
     "time": "07:48",
